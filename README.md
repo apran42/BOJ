@@ -1,8 +1,7 @@
 # BOJ
  BOJ Algorithms<br/>
  BOJ: https://www.acmicpc.net/user/flyingdisc1 <br/>
- solved.ac https://solved.ac/profile/flyingdisc1
-
+ 
  ## I've been learned...
  <div>
  <img alt="html" src="https://img.shields.io/badge/HTML-E34F26.svg?$style=for-the-badge&logo=HTML5&logoColor=white"/>
