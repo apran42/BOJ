@@ -37,7 +37,7 @@ int main() {
 
 void QuickSort(int* arr, int l, int r) {
 	int s = l, e = r;
-	int pivot = *(arr + ((l + r) / 2));		// 배열의 중간위치의 값
+	int pivot = *(arr + ((l + r) / 2));	// 배열의 중간위치의 값
 	int tmp;
 	do
 	{
@@ -45,7 +45,7 @@ void QuickSort(int* arr, int l, int r) {
 			s++;
 		while (*(arr + e) > pivot)	// pivot의 오른쪽 값 중 pivot 이하의 값을 가지는 인덱스 or pivot 인덱스(n-1부터)
 			e--;
-		if (s <= e) {		// s(왼쪽에서 시작한 인덱스)가 e(오른쪽에서 시작한 인덱스)보다 왼쪽에 있을 때(교환 가능)
+		if (s <= e) {			// s(왼쪽에서 시작한 인덱스)가 e(오른쪽에서 시작한 인덱스)보다 왼쪽에 있을 때(교환 가능)
 			tmp = *(arr + s);
 			*(arr + s) = *(arr + e);
 			*(arr + e) = tmp;
@@ -65,17 +65,17 @@ void BinarySearch(int* arr, int len, int* target) {
 	int low = 0, high = len - 1, mid;
 
 	while (low <= high) {			// -> 탐색 구간의 길이가 1이하일 때까지
-		mid = (low + high) / 2;	// 중간값의 인덱스
+		mid = (low + high) / 2;		// 중간값의 인덱스
 
 		if (*(arr + mid) == *target) {	// 중간값이 마침 찾는 값일때
 			*target = 1;
 			return;
 		}
-		else if (*(arr + mid) > *target)	// 중간값이 찾는 값보다 클 때
+		else if (*(arr + mid) > *target)// 중간값이 찾는 값보다 클 때
 			high = mid - 1;
-		else			// 중간값이 찾는 값보다 작을 때
+		else				// 중간값이 찾는 값보다 작을 때
 			low = mid + 1;
 	}
-	*target = 0;			// 찾는 값이 없을 때
+	*target = 0;				// 찾는 값이 없을 때
 	return;
 }
