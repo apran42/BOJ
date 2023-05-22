@@ -5,14 +5,14 @@
 
 typedef struct _Node {
 	int data;
-	struct _Node* next;
-	struct _Node* prev;
+	struct _Node* next; // 다음 노드
+	struct _Node* prev; // 이전 노드
 }Node;
 
 typedef struct _Deque {
-	Node* front;
-	Node* rear;
-	int size;
+	Node* front;    // 시작 노드
+	Node* rear;     // 마지막 노드
+	int size;       // 덱의 길이
 }Deque;
 
 void init(Deque* deque) {
@@ -21,27 +21,9 @@ void init(Deque* deque) {
 	deque->size = 0;
 }
 
-void push_back(Deque* deque, int data) {
-	Node* tmpNode = (Node*)malloc(sizeof(Node));
-	tmpNode->next = NULL;
-	tmpNode->prev = NULL;
-	tmpNode->data = data;
-
-	// 처음 삽입
-	if (deque->rear == NULL) {
-		deque->rear = tmpNode;
-		deque->front = tmpNode;
-	}
-	else {
-		deque->rear->next = tmpNode;
-		tmpNode->prev = deque->rear;
-		deque->rear = tmpNode;
-	}
-	deque->size++;
-}
-
 void push_front(Deque* deque, int data) {
 	Node* tmpNode = (Node*)malloc(sizeof(Node));
+	// 임시 노드 초기화
 	tmpNode->next = NULL;
 	tmpNode->prev = NULL;
 	tmpNode->data = data;
@@ -53,8 +35,34 @@ void push_front(Deque* deque, int data) {
 	}
 	else {
 		deque->front->prev = tmpNode;
+		// 맨 앞의 이전 노드를 새 노드로 지정
 		tmpNode->next = deque->front;
+		// 새 노드의 다음 노드를 지금의 맨 앞 노드로 지정
 		deque->front = tmpNode;
+		// 맨 앞의 노드를 새 노드로 지정
+	}
+	deque->size++;
+}
+
+void push_back(Deque* deque, int data) {
+	Node* tmpNode = (Node*)malloc(sizeof(Node));
+	// 임시 노드 초기화
+	tmpNode->next = NULL;
+	tmpNode->prev = NULL;
+	tmpNode->data = data;
+
+	// 처음 삽입
+	if (deque->rear == NULL) {
+		deque->rear = tmpNode;
+		deque->front = tmpNode;
+	}
+	else {
+		deque->rear->next = tmpNode;
+		// 맨 뒤의 다음 노드를 새 노드로 지정
+		tmpNode->prev = deque->rear;
+		// 새 노드의 이전 노드를 지금의 맨 뒤 노드로 지정
+		deque->rear = tmpNode;
+		// 맨 뒤의 노드를 새 노드로 지정
 	}
 	deque->size++;
 }
@@ -66,7 +74,7 @@ void pop_front(Deque* deque) {
 	}
 	else {
 		Node* tmp = deque->front;
-		if (deque->size == 1) {
+		if (deque->size == 1) {	// 노드가 1개일 때
 			printf("%d\n", tmp->data);
 			free(tmp);
 			deque->front = NULL;
@@ -90,7 +98,7 @@ void pop_back(Deque* deque) {
 	}
 	else {
 		Node* tmp = deque->rear;
-		if (deque->size == 1) {
+		if (deque->size == 1) {	// 노드가 1개일 때
 			printf("%d\n", tmp->data);
 			free(tmp);
 			deque->front = NULL;
