@@ -30,5 +30,5 @@ for line in satellite_map:
 sorted_dis = list(set(sorted(dis)))
 for d in dis:
     rank.append(sorted_dis.index(d)+1)
-print(dis,'\n',sorted_dis)
-print(rank)
+for r in rank:
+    print(r)
