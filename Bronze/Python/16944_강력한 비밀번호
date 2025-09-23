@@ -1,0 +1,42 @@
+import sys
+
+
+# 숫자가 있는지
+def isInNum(pw):
+    for c in pw:
+        if '0' <= c <= '9':
+            return 0
+    return 1
+# 소문자가 있는지
+def isLowerCase(pw):
+    for c in pw:
+        if 'a' <= c <= 'z':
+            return 0
+    return 1
+# 대문자가 있는지
+def isUpperCase(pw):
+    for c in pw:
+        if 'A' <= c <= 'Z':
+            return 0
+    return 1
+#특수문자가 있는지
+def isSpecial(pw):
+    special = set(['!','@','#','$','%','^','&','*','(',')','-','+'])
+    for c in pw:
+        if c in special:
+            return 0
+    return 1
+
+
+n = int(sys.stdin.readline())
+password = sys.stdin.readline().rstrip()
+
+# sys.stdin = open('Bronze\input.txt', 'r')
+# n = int(input())
+# password = input()
+
+# 실수등
+mistakes = isInNum(password) + isLowerCase(password) + isUpperCase(password) + isSpecial(password)
+answer = max(mistakes, 6-len(password))
+
+print(answer)
