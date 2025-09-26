@@ -11,7 +11,22 @@
 #  **************************************************************************  #
 import sys
 
+
 while True:
-    n = int(sys.stdin.readline())
-    if n == 0: break
-    
+    n = sys.stdin.readline().rstrip()
+    if n == '0': break
+    if len(n)<4:
+        n = '0'*(4-len(n)) + n
+    random_num = [n]
+    while int(n) != 0:
+        # n의 제곱값(string) 
+        n = str((int(n))**2)
+        # n^2 정상화
+        if len(n)<8:
+            n = '0'*(8-len(n))+n
+        n = n[2:6]
+        if n in random_num:
+            break
+        else:
+            random_num.append(n)
+    sys.stdout.write(str(len(random_num))+'\n')
