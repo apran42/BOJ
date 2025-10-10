@@ -9,3 +9,15 @@
 #    Solved: 2025/10/10 14:06:09 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
+import sys
+input = sys.stdin.readline
+output = sys.stdout.write
+
+n = int(input())
+
+for _ in range(n):
+    num = int(input())
+    if num%2 == 1:
+        output('0\n')
+    else:
+        output(str(2**(num-1))+'\n')
