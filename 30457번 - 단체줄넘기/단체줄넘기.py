@@ -1,23 +1,26 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 33675                             :+:    :+:      :+:     #
+#    Problem Number: 30457                             :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/33675                          #+#        #+#      #+#     #
-#    Solved: 2025/10/10 14:06:09 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/30457                          #+#        #+#      #+#     #
+#    Solved: 2025/10/12 02:53:55 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
 import sys
 input = sys.stdin.readline
-output = sys.stdout.write
 
 n = int(input())
-
-for _ in range(n):
-    num = int(input())
-    if num%2 == 1:
-        output('0\n')
+student = list(map(int, input().split()))
+dict_student = dict()
+for stu in student:
+    if stu in dict_student:
+        dict_student[stu] += 1
     else:
-        output(str(2**(num-1))+'\n')
+        dict_student[stu] = 1
+answer = 0
+for stu in list(dict_student.keys()):
+    answer += dict_student.get(stu) if dict_student[stu] <= 2 else 2
+print(answer)
