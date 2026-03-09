@@ -1,25 +1,22 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 11047                             :+:    :+:      :+:     #
+#    Problem Number: 11399                             :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/11047                          #+#        #+#      #+#     #
-#    Solved: 2025/11/13 09:51:20 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/11399                          #+#        #+#      #+#     #
+#    Solved: 2026/02/21 17:50:12 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-coin, target = map(int, input().split())
-coins = []
+people = int(input())
+times = list(map(int, input().split()))
 
+times.sort()
 answer = 0
+temp = 0
+for t in times:
+    temp += t
+    answer += temp
 
-for _ in range(coin):
-    coins.append(int(input()))
-coins.sort(reverse=True)
-
-for c in coins:
-    if c <= target:
-        answer += target//c
-        target%=c
 print(answer)

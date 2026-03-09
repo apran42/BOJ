@@ -1,25 +1,22 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 11047                             :+:    :+:      :+:     #
+#    Problem Number: 1026                              :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/11047                          #+#        #+#      #+#     #
-#    Solved: 2025/11/13 09:51:20 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/1026                           #+#        #+#      #+#     #
+#    Solved: 2026/02/21 17:34:53 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-coin, target = map(int, input().split())
-coins = []
+n = int(input())
+a_list = list(map(int, input().split()))
+b_list = list(map(int, input().split()))
+
+a_list.sort()
+b_list.sort(reverse=True)
 
 answer = 0
-
-for _ in range(coin):
-    coins.append(int(input()))
-coins.sort(reverse=True)
-
-for c in coins:
-    if c <= target:
-        answer += target//c
-        target%=c
+for i in range(n):
+    answer += a_list[i]*b_list[i]
 print(answer)
