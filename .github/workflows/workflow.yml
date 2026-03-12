@@ -10,10 +10,10 @@ jobs:
       contents: write
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          token: ${{ secrets.BOJ_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Get List of Not Filled Markdown Files
         id: getfile
         run: |-
