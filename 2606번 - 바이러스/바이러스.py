@@ -39,5 +39,5 @@ while head < len(queue):
         if not visited[n]:
             visited[n] = True
             queue.append(n) # 방문하지 않았으면 새롭게 큐에 추가
-# 1번을 제외한 큐의 길이(1번과 연결된 컴퓨터의 수)
+# 1번을 제외한 큐(1번과 연결된 컴퓨터의 수)
 print(len(queue) - 1)
