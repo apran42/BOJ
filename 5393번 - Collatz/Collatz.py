@@ -1,30 +1,22 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 2156                              :+:    :+:      :+:     #
+#    Problem Number: 5393                              :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/2156                           #+#        #+#      #+#     #
-#    Solved: 2025/11/11 14:01:46 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/5393                           #+#        #+#      #+#     #
+#    Solved: 2026/04/03 13:51:15 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-n = int(input())
-wine = [0]
-for _ in range(n):
-    wine.append(int(input()))
+test_case = int(input())
 
-dp = [0] * (n+1)
-dp[1] = wine[1]
+for _ in range(test_case):
+    answer = 0
+    collatz = int(input())
 
-if n > 1:
-    dp[2] = wine[1] + wine[2]
+    count_in = (collatz+1) // 2
+    boundary = (collatz-1) // 3
 
-
-for i in range(3, n+1):
-    dp[i] = max(
-        dp[i-1],
-        dp[i-2]+wine[i],
-        dp[i-3]+wine[i-1]+wine[i])
-print(max(dp))
-    
+    count_out = ((collatz+1) // 2) - ((boundary+1)//2)
+    print(count_in+count_out)

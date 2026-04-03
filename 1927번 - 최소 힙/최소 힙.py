@@ -1,30 +1,26 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 2156                              :+:    :+:      :+:     #
+#    Problem Number: 1927                              :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/2156                           #+#        #+#      #+#     #
-#    Solved: 2025/11/11 14:01:46 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/1927                           #+#        #+#      #+#     #
+#    Solved: 2026/04/02 14:11:45 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-n = int(input())
-wine = [0]
+import heapq
+import sys
+
+n = int(sys.stdin.readline())
+heap = []
+
 for _ in range(n):
-    wine.append(int(input()))
-
-dp = [0] * (n+1)
-dp[1] = wine[1]
-
-if n > 1:
-    dp[2] = wine[1] + wine[2]
-
-
-for i in range(3, n+1):
-    dp[i] = max(
-        dp[i-1],
-        dp[i-2]+wine[i],
-        dp[i-3]+wine[i-1]+wine[i])
-print(max(dp))
-    
+    cmd = int(sys.stdin.readline())
+    if cmd == 0:
+        if not heap:
+            print(0)
+        else:
+            print(heapq.heappop(heap))
+    else:
+        heapq.heappush(heap, cmd)

@@ -1,30 +1,25 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 2156                              :+:    :+:      :+:     #
+#    Problem Number: 1166                              :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: flyingdisc1 <boj.kr/u/flyingdisc1>          +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/2156                           #+#        #+#      #+#     #
-#    Solved: 2025/11/11 14:01:46 by flyingdisc1   ###          ###   ##.kr     #
+#    https://boj.kr/1166                           #+#        #+#      #+#     #
+#    Solved: 2026/04/03 14:25:38 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-n = int(input())
-wine = [0]
-for _ in range(n):
-    wine.append(int(input()))
+num, length, width, height = map(int, input().split())
 
-dp = [0] * (n+1)
-dp[1] = wine[1]
+low = 0
+high = max(length, width, height)
+for _ in range(100):
+    mid = (low+high) / 2
+    tmp = (length//mid) * (width//mid) * (height//mid)
 
-if n > 1:
-    dp[2] = wine[1] + wine[2]
+    if tmp >= num:
+        low = mid
+    else:
+        high = mid
 
-
-for i in range(3, n+1):
-    dp[i] = max(
-        dp[i-1],
-        dp[i-2]+wine[i],
-        dp[i-3]+wine[i-1]+wine[i])
-print(max(dp))
-    
+print(low)
