@@ -36,4 +36,4 @@ for i in range(1, n+1):
     total = sum(graph[i][1:]) # 무한대값 패스
     result.append(total)
 # 값이 가장 작은 사람 중복의 경우 인덱스가 작은 사람
-print(result.index(min(result)) + 1)
+print(result.index(min(result))+1)
