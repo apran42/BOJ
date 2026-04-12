@@ -1,4 +1,4 @@
-# 10026번: 적록색약 - <img src="https://static.solved.ac/tier_small/11.svg"style="height:20px" /> Gold V
+# 10026번: 적록색약 - <img src="https://static.solved.ac/tier_small/11.svg" style="height:20px" /> Gold V
 
 <!-- performance -->
 
