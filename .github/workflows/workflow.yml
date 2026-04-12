@@ -1,50 +1,51 @@
 name: Update Markdown Performance
 on:
   push:
-    branches: [ main ]
     paths:
       - "**.md"
-
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Get List of Markdown Files
+      - name: Get List of Not Filled Markdown Files
         id: getfile
-        run: |
-          # 주석 태그가 있고, 아직 성능 내용이 채워지지 않은(설명 문구만 있는) 파일 찾기
-          find . -name "*.md" -print0 | while IFS= read -r -d $'\0' file; do
-            if grep -q "" "$file" && grep -q "제출한 코드의 성능이 입력될 공간" "$file"; then
-              echo "$file" >> not_filled_files.txt
-            fi
-          done
-
+        run: |-
+          echo "" > not_filled_files.txt
+          while IFS= read -r -d $'\0' file; do
+          	if ! grep -q "### 성능 요약" "$file"; then
+          		echo "$file" >> not_filled_files.txt
+          	fi
+          done < <(find . -name "*.md" -print0)
       - name: Update Performance in Markdown
         uses: dltkdgns00/BOJ-action@main
         with:
           path: not_filled_files.txt
           user_id: flyingdisc1
-
+      - name: remove not_filled_files.txt
+        run: rm not_filled_files.txt
       - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Update performance details"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          git config --local user.email
+          "github-actions[bot]@users.noreply.github.com"
 
-      - name: Cleanup
-        if: always()
-        run: rm -f not_filled_files.txt
+          git config --local user.name "github-actions[bot]"
+
+          git add .
+
+          git status
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+          	git commit -m "Update performance details"
+          	git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          else
+          	echo "No changes to commit."
+          fi
