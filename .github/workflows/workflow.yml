@@ -1,47 +1,50 @@
 name: Update Markdown Performance
 on:
   push:
+    branches: [ main ]
     paths:
       - "**.md"
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN }}
-      - name: Get List of Not Filled Markdown Files
+
+      - name: Get List of Markdown Files
         id: getfile
-        run: |-
-          echo "" > not_filled_files.txt
-          while IFS= read -r -d $'\0' file; do
-          	if ! grep -q "### 성능 요약" "$file"; then
-          		echo "$file" >> not_filled_files.txt
-          	fi
-          done < <(find . -name "*.md" -print0)
+        run: |
+          # 주석 태그가 있고, 아직 성능 내용이 채워지지 않은(설명 문구만 있는) 파일 찾기
+          find . -name "*.md" -print0 | while IFS= read -r -d $'\0' file; do
+            if grep -q "" "$file" && grep -q "제출한 코드의 성능이 입력될 공간" "$file"; then
+              echo "$file" >> not_filled_files.txt
+            fi
+          done
+
       - name: Update Performance in Markdown
         uses: dltkdgns00/BOJ-action@main
         with:
           path: not_filled_files.txt
           user_id: flyingdisc1
-      - name: remove not_filled_files.txt
-        run: rm not_filled_files.txt
+
       - name: Commit and push changes
-        run: >-
-          git config --local user.email
-          "github-actions[bot]@users.noreply.github.com"
-
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
           git add .
-
-          git status
-
           if [[ -n "$(git status --porcelain)" ]]; then
-          	git commit -m "Update performance details"
-          	git push
+            git commit -m "Update performance details"
+            git push
           else
-          	echo "No changes to commit."
+            echo "No changes to commit."
           fi
+
+      - name: Cleanup
+        if: always()
+        run: rm -f not_filled_files.txt
