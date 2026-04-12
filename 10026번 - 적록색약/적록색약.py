@@ -48,8 +48,8 @@ blind = 0
 
 for i in range(n):
     for j in range(n):
-        if grid[i][j] == 'G':
-            grid[i][j] = 'R'
+        if grid[i][j] == 'R':
+            grid[i][j] = 'G'
 
 for i in range(n):
     for j in range(n):
