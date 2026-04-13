@@ -6,14 +6,12 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
+          token: ${{ secrets.GH_TOKEN }}
       - name: Get List of Not Filled Markdown Files
         id: getfile
         run: |-
@@ -31,8 +29,6 @@ jobs:
       - name: remove not_filled_files.txt
         run: rm not_filled_files.txt
       - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: >-
           git config --local user.email
           "github-actions[bot]@users.noreply.github.com"
@@ -45,7 +41,7 @@ jobs:
 
           if [[ -n "$(git status --porcelain)" ]]; then
           	git commit -m "Update performance details"
-          	git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          	git push
           else
           	echo "No changes to commit."
           fi
