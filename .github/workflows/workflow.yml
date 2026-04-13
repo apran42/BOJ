@@ -16,13 +16,22 @@ jobs:
 
       - name: Get List of Not Filled Markdown Files
         id: getfile
-        run: |-
-          echo "" > not_filled_files.txt
-          while IFS= read -r -d $'\0' file; do
+        run: |
+          # 1. 일단 빈 파일을 확실히 생성
+          touch not_filled_files.txt
+          
+          # 2. 한글 파일명 깨짐 방지 및 모든 .md 파일 검색 (재귀적)
+          # '### 성능 요약'이 없는 파일만 골라내기
+          find . -name "*.md" -type f | while read -r file; do
             if ! grep -q "### 성능 요약" "$file"; then
               echo "$file" >> not_filled_files.txt
+              echo "발견된 파일: $file"
             fi
-          done < <(find . -name "*.md" -print0)
+          done
+
+          # 3. 파일이 비었는지 로그로 확인
+          echo "=== 수정 대상 파일 목록 ==="
+          cat not_filled_files.txt
 
       - name: Update Performance in Markdown
         uses: dltkdgns00/BOJ-action@main
