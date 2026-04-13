@@ -1,4 +1,4 @@
-# 14500번: 테트로미노 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
+# 14500번: 테트로미노 - <img src="https://static.solved.ac/tier_small/11.svg" style="height:20px" /> Gold IV
 
 <!-- performance -->
 
