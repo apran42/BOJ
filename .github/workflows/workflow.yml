@@ -35,13 +35,22 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          # 1. 사용자 설정
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git config --local core.quotepath false
+          
+          # 2. 403 에러의 주범인 '기존 인증 헤더'를 강제로 삭제
+          git config --local --unset-all http.https://github.com/.extraheader
+          
+          # 3. 변경사항 반영
           git add .
+          
+          # 4. 변경사항이 있을 때만 푸시
           if [[ -n "$(git status --porcelain)" ]]; then
             git commit -m "Update performance details"
-            git push
+            # 5. 토큰을 주소에 직접 넣어서 권한 강제 부여
+            git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main
           else
             echo "No changes to commit."
           fi
