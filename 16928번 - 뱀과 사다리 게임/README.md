@@ -8,7 +8,7 @@
 
 ## 문제
 
-[문제 링크](https://boj.kr/16928)
+[문제 링크] (https://boj.kr/16928)
 
 <p><a href="https://en.wikipedia.org/wiki/Snakes_and_Ladders">뱀과 사다리 게임</a>을 즐겨 하는 큐브러버는 어느 날 궁금한 점이 생겼다.</p>
 
