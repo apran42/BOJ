@@ -1,4 +1,4 @@
-# 9019번: DSLR - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
+# 9019번: DSLR - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Gold V
 
 <!-- performance -->
 
