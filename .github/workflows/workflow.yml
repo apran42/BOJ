@@ -6,60 +6,42 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4  # 최신 버전으로 교체
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
+          token: ${{ secrets.GH_TOKEN }}
       - name: Get List of Not Filled Markdown Files
         id: getfile
-        run: |
-          # 1. 일단 빈 파일을 확실히 생성
-          touch not_filled_files.txt
-          
-          # 2. 한글 파일명 깨짐 방지 및 모든 .md 파일 검색 (재귀적)
-          # '### 성능 요약'이 없는 파일만 골라내기
-          find . -name "*.md" -type f | while read -r file; do
-            if ! grep -q "### 성능 요약" "$file"; then
-              echo "$file" >> not_filled_files.txt
-              echo "발견된 파일: $file"
-            fi
-          done
-
-          # 3. 파일이 비었는지 로그로 확인
-          echo "=== 수정 대상 파일 목록 ==="
-          cat not_filled_files.txt
-
+        run: |-
+          echo "" > not_filled_files.txt
+          while IFS= read -r -d $'\0' file; do
+          	if ! grep -q "### 성능 요약" "$file"; then
+          		echo "$file" >> not_filled_files.txt
+          	fi
+          done < <(find . -name "*.md" -print0)
       - name: Update Performance in Markdown
         uses: dltkdgns00/BOJ-action@main
         with:
           path: not_filled_files.txt
           user_id: flyingdisc1
-
       - name: remove not_filled_files.txt
         run: rm not_filled_files.txt
-
       - name: Commit and push changes
-        run: |
-          # 1. 사용자 설정
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        run: >-
+          git config --local user.email
+          "github-actions[bot]@users.noreply.github.com"
+
           git config --local user.name "github-actions[bot]"
-          git config --local core.quotepath false
-          
-          # 2. 403 에러의 주범인 '기존 인증 헤더'를 강제로 삭제
-          git config --local --unset-all http.https://github.com/.extraheader
-          
-          # 3. 변경사항 반영
+
           git add .
-          
-          # 4. 변경사항이 있을 때만 푸시
+
+          git status
+
           if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Update performance details"
-            # 5. 토큰을 주소에 직접 넣어서 권한 강제 부여
-            git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main
+          	git commit -m "Update performance details"
+          	git push
           else
-            echo "No changes to commit."
+          	echo "No changes to commit."
           fi
