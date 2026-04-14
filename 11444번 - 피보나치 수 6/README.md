@@ -1,5 +1,4 @@
-# 11444번: 피보나치 수 6 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 11444번: 피보나치 수 6 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" style="height:20px" /> Gold II
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 40 ms
