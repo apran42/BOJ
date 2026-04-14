@@ -1,8 +1,7 @@
 # 11725번: 트리의 부모 찾기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" style="height:20px" /> Silver II
 <!-- performance -->
-
-<!-- 문제 제출 후 깃허브에 푸시를 했을 때 제출한 코드의 성능이 입력될 공간입니다.-->
-
+### 성능 요약
+메모리: 51144 KB, 시간: 2740 ms
 <!-- end -->
 
 ## 문제
