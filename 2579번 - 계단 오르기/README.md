@@ -1,4 +1,4 @@
-# 2579번: 계단 오르기 - <img src="https://static.solved.ac/tier_small/8.svg" style="height:20px" /> Silver III
+# 2579번: 계단 오르기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 ### 성능 요약

@@ -1,4 +1,4 @@
-# 11729번: 하노이 탑 이동 순서 - <img src="https://static.solved.ac/tier_small/11.svg" style="height:20px" /> Gold V
+# 11729번: 하노이 탑 이동 순서 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" style="height:20px" /> Gold V
 
 <!-- performance -->
 ### 성능 요약

@@ -1,4 +1,4 @@
-# 9019번: DSLR - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Gold V
+# 9019번: DSLR - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/0.svg" style="height:20px" /> Gold V
 
 <!-- performance -->
 ### 성능 요약

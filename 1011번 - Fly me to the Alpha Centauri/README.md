@@ -1,4 +1,4 @@
-# 1011번: Fly me to the Alpha Centauri - <img src="https://static.solved.ac/tier_small/11.svg" style="height:20px" /> Gold V
+# 1011번: Fly me to the Alpha Centauri - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" style="height:20px" /> Gold V
 
 <!-- performance -->
 ### 성능 요약

@@ -1,4 +1,4 @@
-# 1620번: 나는야 포켓몬 마스터 이다솜 - <img src="https://static.solved.ac/tier_small/7.svg" style="height:20px" /> Silver IV
+# 1620번: 나는야 포켓몬 마스터 이다솜 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" style="height:20px" /> Silver IV
 
 <!-- performance -->
 ### 성능 요약

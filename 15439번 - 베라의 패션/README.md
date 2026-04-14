@@ -1,4 +1,4 @@
-# 15439번: 베라의 패션 - <img src="https://static.solved.ac/tier_small/2.svg" style="height:20px" /> Bronze IV
+# 15439번: 베라의 패션 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/2.svg" style="height:20px" /> Bronze IV
 
 <!-- performance -->
 ### 성능 요약

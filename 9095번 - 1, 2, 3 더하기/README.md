@@ -1,4 +1,4 @@
-# 9095번: 1, 2, 3 더하기 - <img src="https://static.solved.ac/tier_small/8.svg" style="height:20px" /> Silver III
+# 9095번: 1, 2, 3 더하기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 ### 성능 요약

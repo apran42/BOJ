@@ -1,4 +1,4 @@
-# 13913번: 숨바꼭질 4 - <img src="https://static.solved.ac/tier_small/12.svg" style="height:20px" /> Gold IV
+# 13913번: 숨바꼭질 4 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" style="height:20px" /> Gold IV
 
 <!-- performance -->
 ### 성능 요약

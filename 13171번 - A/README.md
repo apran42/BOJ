@@ -1,4 +1,4 @@
-# 13171번: A - <img src="https://static.solved.ac/tier_small/8.svg" style="height:20px" /> Silver III
+# 13171번: A - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 ### 성능 요약

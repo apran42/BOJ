@@ -1,4 +1,4 @@
-# 30676번: 이 별은 무슨 색일까 - <img src="https://static.solved.ac/tier_small/1.svg" style="height:20px" /> Bronze V
+# 30676번: 이 별은 무슨 색일까 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" style="height:20px" /> Bronze V
 
 <!-- performance -->
 ### 성능 요약

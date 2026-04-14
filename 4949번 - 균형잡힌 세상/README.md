@@ -1,4 +1,4 @@
-# 4949번: 균형잡힌 세상 - <img src="https://static.solved.ac/tier_small/7.svg" style="height:20px" /> Silver IV
+# 4949번: 균형잡힌 세상 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" style="height:20px" /> Silver IV
 
 <!-- performance -->
 ### 성능 요약

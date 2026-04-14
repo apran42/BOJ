@@ -1,4 +1,4 @@
-# 30007번: 라면 공식 - <img src="https://static.solved.ac/tier_small/1.svg" style="height:20px" /> Bronze V
+# 30007번: 라면 공식 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" style="height:20px" /> Bronze V
 
 <!-- performance -->
 ### 성능 요약

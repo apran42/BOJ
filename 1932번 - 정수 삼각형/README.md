@@ -1,4 +1,4 @@
-# 1932번: 정수 삼각형 - <img src="https://static.solved.ac/tier_small/10.svg" style="height:20px" /> Silver I
+# 1932번: 정수 삼각형 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" style="height:20px" /> Silver I
 
 <!-- performance -->
 ### 성능 요약

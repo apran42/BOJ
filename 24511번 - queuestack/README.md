@@ -1,4 +1,4 @@
-# 24511번: queuestack - <img src="https://static.solved.ac/tier_small/8.svg" style="height:20px" /> Silver III
+# 24511번: queuestack - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 ### 성능 요약

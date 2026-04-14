@@ -1,4 +1,4 @@
-# 31832번: 팀명 정하기 2 - <img src="https://static.solved.ac/tier_small/4.svg" style="height:20px" /> Bronze II
+# 31832번: 팀명 정하기 2 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/4.svg" style="height:20px" /> Bronze II
 
 <!-- performance -->
 ### 성능 요약

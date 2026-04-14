@@ -1,4 +1,4 @@
-# 10867번: 중복 빼고 정렬하기 - <img src="https://static.solved.ac/tier_small/6.svg" style="height:20px" /> Silver V
+# 10867번: 중복 빼고 정렬하기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" style="height:20px" /> Silver V
 
 <!-- performance -->
 ### 성능 요약

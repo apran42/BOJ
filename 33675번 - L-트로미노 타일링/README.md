@@ -1,4 +1,4 @@
-# 33675번: L-트로미노 타일링 - <img src="https://static.solved.ac/tier_small/5.svg" style="height:20px" /> Bronze I
+# 33675번: L-트로미노 타일링 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" style="height:20px" /> Bronze I
 
 <!-- performance -->
 ### 성능 요약

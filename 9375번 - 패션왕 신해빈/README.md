@@ -1,4 +1,4 @@
-# 9375번: 패션왕 신해빈 - <img src="https://static.solved.ac/tier_small/8.svg" style="height:20px" /> Silver III
+# 9375번: 패션왕 신해빈 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 ### 성능 요약

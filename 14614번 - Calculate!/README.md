@@ -1,4 +1,4 @@
-# 14614번: Calculate! - <img src="https://static.solved.ac/tier_small/4.svg" style="height:20px" /> Bronze II
+# 14614번: Calculate! - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/4.svg" style="height:20px" /> Bronze II
 
 <!-- performance -->
 ### 성능 요약

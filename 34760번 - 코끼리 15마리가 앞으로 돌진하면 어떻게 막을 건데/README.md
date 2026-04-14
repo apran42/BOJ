@@ -1,4 +1,4 @@
-# 34760번: 코끼리 15마리가 앞으로 돌진하면 어떻게 막을 건데 - <img src="https://static.solved.ac/tier_small/5.svg" style="height:20px" /> Bronze I
+# 34760번: 코끼리 15마리가 앞으로 돌진하면 어떻게 막을 건데 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" style="height:20px" /> Bronze I
 
 <!-- performance -->
 ### 성능 요약

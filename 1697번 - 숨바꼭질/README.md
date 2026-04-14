@@ -1,4 +1,4 @@
-# 1697번: 숨바꼭질 - <img src="https://static.solved.ac/tier_small/10.svg" style="height:20px" /> Silver I
+# 1697번: 숨바꼭질 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" style="height:20px" /> Silver I
 
 <!-- performance -->
 ### 성능 요약

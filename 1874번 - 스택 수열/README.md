@@ -1,4 +1,4 @@
-# 1874번: 스택 수열 - <img src="https://static.solved.ac/tier_small/9.svg" style="height:20px" /> Silver II
+# 1874번: 스택 수열 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" style="height:20px" /> Silver II
 
 <!-- performance -->
 ### 성능 요약

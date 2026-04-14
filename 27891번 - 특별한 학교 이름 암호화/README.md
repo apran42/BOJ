@@ -1,4 +1,4 @@
-# 27891번: 특별한 학교 이름 암호화 - <img src="https://static.solved.ac/tier_small/4.svg" style="height:20px" /> Bronze II
+# 27891번: 특별한 학교 이름 암호화 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/4.svg" style="height:20px" /> Bronze II
 
 <!-- performance -->
 ### 성능 요약

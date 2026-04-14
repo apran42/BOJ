@@ -1,4 +1,4 @@
-# 27159번: 노 땡스! - <img src="https://static.solved.ac/tier_small/3.svg" style="height:20px" /> Bronze III
+# 27159번: 노 땡스! - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/3.svg" style="height:20px" /> Bronze III
 
 <!-- performance -->
 ### 성능 요약

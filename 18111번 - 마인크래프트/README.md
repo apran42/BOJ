@@ -1,4 +1,4 @@
-# 18111번: 마인크래프트 - <img src="https://static.solved.ac/tier_small/9.svg" style="height:20px" /> Silver II
+# 18111번: 마인크래프트 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" style="height:20px" /> Silver II
 
 <!-- performance -->
 ### 성능 요약

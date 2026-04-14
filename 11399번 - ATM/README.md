@@ -1,4 +1,4 @@
-# 11399번: ATM - <img src="https://static.solved.ac/tier_small/7.svg" style="height:20px" /> Silver IV
+# 11399번: ATM - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" style="height:20px" /> Silver IV
 
 <!-- performance -->
 ### 성능 요약

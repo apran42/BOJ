@@ -1,4 +1,4 @@
-# 7662번: 이중 우선순위 큐 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
+# 7662번: 이중 우선순위 큐 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/0.svg" style="height:20px" /> Unrated
 
 <!-- performance -->
 ### 성능 요약

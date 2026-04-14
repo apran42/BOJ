@@ -1,4 +1,4 @@
-# 32172번: 현권이와 신기한 수열 - <img src="https://static.solved.ac/tier_small/6.svg" style="height:20px" /> Silver V
+# 32172번: 현권이와 신기한 수열 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" style="height:20px" /> Silver V
 
 <!-- performance -->
 ### 성능 요약
