@@ -1,4 +1,4 @@
-# 15649번: N과 M (1) - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
+# 15649번: N과 M (1) - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" style="height:20px" /> Silver III
 
 <!-- performance -->
 
