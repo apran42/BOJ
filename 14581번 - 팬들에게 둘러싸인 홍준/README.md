@@ -1,5 +1,4 @@
-# 14581번: 팬들에게 둘러싸인 홍준 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 14581번: 팬들에게 둘러싸인 홍준 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" style="height:20px" /> Bronze V
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 32 ms

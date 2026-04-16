@@ -1,5 +1,4 @@
-# 14471번: 포인트 카드 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 14471번: 포인트 카드 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/4.svg" style="height:20px" /> Bronze II
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 32 ms

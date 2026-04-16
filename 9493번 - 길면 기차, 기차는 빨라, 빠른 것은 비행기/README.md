@@ -1,5 +1,4 @@
-# 9493번: 길면 기차, 기차는 빨라, 빠른 것은 비행기 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 9493번: 길면 기차, 기차는 빨라, 빠른 것은 비행기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/3.svg" style="height:20px" /> Bronze III
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 32 ms
