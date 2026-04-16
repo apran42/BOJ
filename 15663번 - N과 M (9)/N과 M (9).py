@@ -9,7 +9,7 @@
 #    Solved: 2026/04/15 02:09:07 by flyingdisc1   ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-def backTracking( path:list):
+def backTracking(path:list):
     if len(path) == length:     # 구하려는 길이에 도달
         print(*path)
     last = -1
