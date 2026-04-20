@@ -1,5 +1,4 @@
-# 1753번: 최단경로 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 1753번: 최단경로 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" style="height:20px" /> Gold IV
 <!-- performance -->
 ### 성능 요약
 메모리: 74420 KB, 시간: 868 ms
