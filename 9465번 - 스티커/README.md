@@ -1,5 +1,4 @@
-# 9465번: 스티커 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 9465번: 스티커 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" style="height:20px" /> Silver I
 <!-- performance -->
 ### 성능 요약
 메모리: 49960 KB, 시간: 644 ms

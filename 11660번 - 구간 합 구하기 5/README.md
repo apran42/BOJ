@@ -1,5 +1,4 @@
-# 11660번: 구간 합 구하기 5 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 11660번: 구간 합 구하기 5 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" style="height:20px" /> Silver I
 <!-- performance -->
 ### 성능 요약
 메모리: 106252 KB, 시간: 1032 ms

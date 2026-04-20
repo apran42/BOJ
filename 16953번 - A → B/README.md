@@ -1,5 +1,4 @@
-# 16953번: A → B - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 16953번: A → B - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" style="height:20px" /> Silver II
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 36 ms

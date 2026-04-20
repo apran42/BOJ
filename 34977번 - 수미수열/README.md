@@ -1,5 +1,4 @@
-# 34977번: 수미수열 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 34977번: 수미수열 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" style="height:20px" /> Bronze I
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 32 ms

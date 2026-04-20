@@ -1,5 +1,4 @@
-# 1991번: 트리 순회 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 1991번: 트리 순회 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" style="height:20px" /> Silver I
 <!-- performance -->
 ### 성능 요약
 메모리: 32412 KB, 시간: 36 ms
