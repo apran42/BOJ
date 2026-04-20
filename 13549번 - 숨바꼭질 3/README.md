@@ -1,5 +1,4 @@
-# 13549번: 숨바꼭질 3 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 13549번: 숨바꼭질 3 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" style="height:20px" /> Gold V
 <!-- performance -->
 ### 성능 요약
 메모리: 37996 KB, 시간: 124 ms

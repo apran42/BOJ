@@ -1,5 +1,4 @@
-# 12865번: 평범한 배낭 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 12865번: 평범한 배낭 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" style="height:20px" /> Gold V
 <!-- performance -->
 ### 성능 요약
 메모리: 36264 KB, 시간: 2472 ms
