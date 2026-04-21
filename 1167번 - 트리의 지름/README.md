@@ -1,5 +1,4 @@
-# 1167번: 트리의 지름 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 1167번: 트리의 지름 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" style="height:20px" /> Gold II
 <!-- performance -->
 ### 성능 요약
 메모리: 72888 KB, 시간: 584 ms

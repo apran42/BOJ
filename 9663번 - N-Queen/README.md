@@ -1,5 +1,4 @@
-# 9663번: N-Queen - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 9663번: N-Queen - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" style="height:20px" /> Gold IV
 <!-- performance -->
 ### 성능 요약
 메모리: 198268 KB, 시간: 28036 ms
