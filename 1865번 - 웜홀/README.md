@@ -1,5 +1,4 @@
-# 1865번: 웜홀 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 1865번: 웜홀 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" style="height:20px" /> Gold III
 <!-- performance -->
 ### 성능 요약
 메모리: 34952 KB, 시간: 2388 ms

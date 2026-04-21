@@ -1,5 +1,4 @@
-# 2206번: 벽 부수고 이동하기 - <img src="https://static.solved.ac/tier_small/0.svg" style="height:20px" /> Unrated
-
+# 2206번: 벽 부수고 이동하기 - <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" style="height:20px" /> Gold III
 <!-- performance -->
 ### 성능 요약
 메모리: 191760 KB, 시간: 3288 ms
